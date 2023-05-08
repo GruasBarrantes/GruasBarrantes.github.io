@@ -1,46 +1,201 @@
-*{
-    margin: 5px;
-    margin-top: 2px;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
-    background-color: rgb(29, 55, 75);
+  background-color: #f3f3f3;
 }
 
-header {
-    background: rgba(0,0,0,0.7);
-    width: 100%;
-    position: absolute;
-    z-index: 100;
-  }
-
-nav {
-    float: left;
-  }
-
-nav ul {
-    list-style: none;
-    overflow: hidden; 
-  }
-
-nav ul li {
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;;
-    font-size: 20px;
-}
-nav ul li a {
-    display: block; 
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-  }
-nav ul li:hover {
-    background: #eca023;
-}
-
-img {
-    border: 2px solid black;
-    margin: 10px;
-    padding: 5px;
-    display: block;
-  }
+.nav{
   
+  background-color: #045cbc;
+  height: 60px;
+ width: 100%;
+}
+
+.nav a{
+  color: white;
+  text-transform: uppunsetercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding: 15px 20px;
+
+}
+
+.nav a:hover{
+  color: #000;
+  text-transform: uppercase;
+  background-color:wheat ;
+} 
+
+.informacion img{
+  width: 100%;
+  height: 100%;
+}
+.gallery {
+  min-height: 100vh;
+  width: 80%;
+  outline: 10px solid #000;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  gap: 30px;
+}
+
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pricipal_img {
+  height: 400px;
+  width: 80%;
+}
+
+.texto h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.carousel-item img {
+  width: 600px;
+  height: 700px;
+}
+
+.numero {
+  height: 160px;
+  background-color: #045cbc;
+  border-style: solid;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.numero1 {
+  height:180px;
+  background-color: #081c34;
+
+}
+
+.paralelogramo {
+  padding: 15px;
+  color: white;
+  transform: skew(20deg);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.informacion{
+  color: white;
+  background-color: #085cbc;
+  margin-top: 20px;
+  text-align: justify;
+
+}
+
+.informacion ul{
+  list-style: none;
+  list-style-position: inside;
+  text-decoration: underline;
+  list-style-image: url(IMG/Iconos/Check.png);
+}
+.informacion ul li{
+  position: relative;
+  margin-top: 20px;
+}
+
+
+.cotizacion{
+  margin-top: 100px;
+  background: linear-gradient(
+    75deg,
+    rgb(78, 134, 176) 50%,
+    rgba(243, 243, 243, 0)
+    ),
+  url(IMG/Diego1.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  width: 100%;
+  border-radius: 25px;
+  
+}
+.cotizacion h2{
+  color: wheat;
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+label{
+  font-size: 17px;
+  color: wheat;
+  margin-bottom: 10px;
+}
+input, textarea{
+  padding: 17px 14px;
+  background-color: #081c34;
+  border: 0;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+:focus{
+  outline: 1px solid #1E92E9;
+
+}
+
+.btn{
+  background-color: #1E92E9;
+  width: 150px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #219BF9;
+}
+@media(max-width:991px){
+  body{
+    padding: 30px;
+  }
+  .cotizacion{
+    width: 100%;
+  }
+  form{
+
+    width: 100%;
+  }
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #aebad1;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-top: 20px;
+}
